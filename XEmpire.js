@@ -372,7 +372,7 @@ const main = async () => {
                 console.log(`Error processing account ${no + 1}: ${error.message}`);
             }
         }
-        await waitWithCountdown(Math.floor(650));
+        await waitWithCountdown(Math.floor(651));
         console.clear();
         printBanner();  // Print banner after clearing the console
     }
