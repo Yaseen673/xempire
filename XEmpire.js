@@ -95,7 +95,7 @@ const pvpFight = async (apiKey, level, balance) => {
     const strategy = strategies[Math.floor(Math.random() * strategies.length)];
 
     let league;
-    if (level >= 13 && balance >= 100000000) {
+    if (level >= 13 && balance >= 10000000) {
         league = 'diamond';
     }
     else if (level >= 10 && balance >= 10000000) {
@@ -372,7 +372,7 @@ const main = async () => {
                 console.log(`Error processing account ${no + 1}: ${error.message}`);
             }
         }
-        await waitWithCountdown(Math.floor(650));
+        await waitWithCountdown(Math.floor(580));
         console.clear();
         printBanner();  // Print banner after clearing the console
     }
