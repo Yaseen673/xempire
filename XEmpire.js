@@ -95,20 +95,20 @@ const pvpFight = async (apiKey, level, balance) => {
     const strategy = strategies[Math.floor(Math.random() * strategies.length)];
 
     let league;
-    if (level >= 13 && balance >= 10000000) {
-        league = 'diamond';
+    if (level >= 13 && balance >= 100000000) {
+        league = 'Diamond';
     }
     else if (level >= 10 && balance >= 10000000) {
-        league = 'platinum';
+        league = 'Platinum';
     }
     else if (level >= 8 && balance >= 1000000) {
-        league = 'gold';
+        league = 'Gold';
     }
     else if (level > 4 && balance >= 100000) {
-        league = 'silver';
+        league = 'Silver';
     }
     else if (level <= 4 && balance >= 10000) {
-        league = 'bronze';
+        league = 'Bronze';
     }
     else {
         return "Not eligible to participate in any tournament.";
