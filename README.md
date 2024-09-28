@@ -1,6 +1,6 @@
 ## Termux
 
-1. Tatacara
+1. Procedure
 
    - Node.js:
      ```shell
